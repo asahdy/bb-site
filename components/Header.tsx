@@ -24,7 +24,7 @@ export default function Header() {
   const isHomepage = pathname === "/"
   const [pastHero, setPastHero] = useState(false)
   const [aboutOpen, setAboutOpen] = useState(false)
-  const closeTimer = useRef<ReturnType<typeof setTimeout>>()
+  const closeTimer = useRef<ReturnType<typeof setTimeout>>(undefined)
 
   useEffect(() => {
     if (!isHomepage) {
