@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:news.wttw.com)",
+      "WebFetch(domain:www.aol.com)",
+      "WebFetch(domain:www.chicagotribune.com)",
+      "WebFetch(domain:blockclubchicago.org)",
+      "WebFetch(domain:americanahighways.org)",
+      "WebFetch(domain:www.discogs.com)"
+    ]
+  }
+}
