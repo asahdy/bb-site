@@ -15,7 +15,7 @@ const professionalContacts = [
     category: "Publicist",
     entries: [
       { label: "Email:", name: "Lynn Orman", value: "ormanmusic@gmail.com", href: "mailto:ormanmusic@gmail.com" },
-      { label: "Phone Number:", value: "847-452-6469", href: "tel:18474526469" }
+      { label: "Number:", value: "847-452-6469", href: "tel:18474526469" }
     ],
   },
   {
