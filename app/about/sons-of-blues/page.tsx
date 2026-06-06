@@ -8,14 +8,14 @@ const members = [
   {
     name: "Giles Corey",
     role: "Guitar",
-    image: "/images/giles-img.jpg",
+    image: "/images/rsgiles.jpg",
     bio: "Giles joined the SOBs after graduating from the University of Chicago in 1997. In 2001 he joined the band of the legendary Otis Rush, staying with him until the elder bluesman's disabling stroke. Giles then formed his own band, Lubriphonic, releasing 5 albums. As he developed as a songwriter and front man, he sought more of the truth he found in both roots and Blues music, hastening his return to the SOBs as a soulful and riveting guitar player. He continues fronting his own highly acclaimed Giles Corey Band.",
     status: "active",
   },
   {
     name: 'Dionte "McMusik" Skinner',
     role: "Drums",
-    image: "/images/dionte-img.jpg",
+    image: "/images/dtdionte.jpg",
     bio: "Dionte's hard hitting drum style drives the SOBs and grabs the audience at every gig. He is a highly sought-after studio musician because of his versatility and skill. Although he is the youngest SOB, he has immense commitment and passion regarding the Blues.",
     status: "active",
   },
@@ -29,7 +29,7 @@ const members = [
   {
     name: "Ari Seder",
     role: "Bass",
-    image: "/images/ari-img.jpg",
+    image: "/images/dtari.jpg",
     bio: "Ari is the newest SOB. In addition to being an outstanding bass player, he is an accomplished guitarist, composer, and performer. He is in demand for both studio and live work because of his versatility. His creativity and musicianship shine in his contributions to song arrangements and his ever-so-cool stage presence.",
     status: "active",
   },
@@ -38,7 +38,7 @@ const members = [
     role: "Drums",
     image: "/images/mose-img.jpg",
     bio: "Mose retired in 2016 after serving as the drummer for the Sons of Blues for nearly 30 years. He previously played with legendary greats including Major Lance, Bobby Rush, McKinley Mitchell, and Joe Tex. His intense energy and unique rhythmic style was the engine that powered the stylistic diversity of the Sons of Blues. His rich, Mississippi voice evoked the deep emotions of his southern Blues roots.",
-    status: "retired",
+    status: "memorial",
   },
   {
     name: "Nick Charles",
@@ -76,40 +76,42 @@ export default function SonsOfBluesPage() {
 
           <h2 className="text-muted-foreground text-3xl md:4xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">The Band</h2>
 
-          {members.map((member, index) => (
-            <div
-              key={member.name}
-              className={`py-16 grid grid-cols-1 md:grid-cols-[240px_1fr] gap-10 items-start `}
-            >
-              {/* Photo */}
-              <div className={`relative w-full aspect-3/4 overflow-hidden ${member.status === "memorial" ? "opacity-60 grayscale" : ""}`}>
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16 mt-12">
+            {members.map((member) => (
+              <div key={member.name} className="flex flex-col gap-5">
 
-              {/* Text */}
-              <div className="flex flex-col gap-4 md:pt-2">
-                <div className="flex flex-col gap-1">
-                  <p className="text-muted-foreground text-xl uppercase tracking-widest">
-                    {member.role}
-                    {member.status === "retired" && " · Retired"}
-                    {member.status === "memorial" && " · In Memoriam"}
-                  </p>
-                  <h2 className="text-foreground text-4xl font-bold uppercase tracking-widest">
-                    {member.name}
-                  </h2>
+                {/* Photo */}
+                <div className={`relative w-full aspect-3/4 overflow-hidden ${member.status === "memorial" ? "opacity-60 grayscale" : ""}`}>
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    quality={100}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover object-top"
+                  />
                 </div>
-                <p className={`font-light leading-relaxed text-xl ${member.status === "memorial" ? "text-muted-foreground" : "text-foreground"}`}>
-                  {member.bio}
-                </p>
-              </div>
 
-            </div>
-          ))}
+                {/* Text */}
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-1 border-b-2 border-border pb-3">
+                    <p className="text-muted-foreground text-sm uppercase tracking-widest">
+                      {member.role}
+                      {member.status === "retired" && " · Retired"}
+                      {member.status === "memorial" && " · In Memoriam"}
+                    </p>
+                    <h2 className="text-foreground text-2xl font-bold uppercase tracking-widest">
+                      {member.name}
+                    </h2>
+                  </div>
+                  <p className={`font-light leading-relaxed text-base ${member.status === "memorial" ? "text-muted-foreground" : "text-foreground"}`}>
+                    {member.bio}
+                  </p>
+                </div>
+
+              </div>
+            ))}
+          </div>
 
           {/* Explore More */}
           <div className="border-t-2 border-border pt-16 grid grid-cols-1 md:grid-cols-2 gap-6 mt-0">

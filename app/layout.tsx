@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import Header from "@/components/Header"
 import Footer from "@/components/footer"
+import MusicPlayer from "@/components/MusicPlayer"
 
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
     template: "%s — Billy Branch",
   },
   description: "Official website of Billy Branch, Emmy Award winner, three-time Grammy nominee, and Blues Hall of Fame inductee.",
+  icons: {
+    icon: "/images/BIMB.jpg",
+  },
 };
 
 export default function RootLayout({
@@ -37,6 +41,7 @@ export default function RootLayout({
         <Header/>
         <div className="flex-1">{children}</div>
         <Footer/>
+        <MusicPlayer />
       </body>
 
     </html>

@@ -6,7 +6,10 @@
       "WebFetch(domain:www.chicagotribune.com)",
       "WebFetch(domain:blockclubchicago.org)",
       "WebFetch(domain:americanahighways.org)",
-      "WebFetch(domain:www.discogs.com)"
+      "WebFetch(domain:www.discogs.com)",
+      "Bash(node -e \"const icons = require\\(''c:/Users/soatm/Desktop/dev/bb-site/node_modules/@hugeicons/react''\\); const names = Object.keys\\(icons\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''pause''\\) || k.toLowerCase\\(\\).includes\\(''play''\\)\\); console.log\\(names.slice\\(0,20\\)\\)\")",
+      "Bash(node -e \"const icons = require\\(''c:/Users/soatm/Desktop/dev/bb-site/node_modules/@hugeicons/react''\\); console.log\\(Object.keys\\(icons\\).slice\\(0,20\\)\\)\")",
+      "Bash(node -e \"const icons = require\\(''c:/Users/soatm/Desktop/dev/bb-site/node_modules/@hugeicons/core-free-icons''\\); const names = Object.keys\\(icons\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''pause''\\) || k.toLowerCase\\(\\).includes\\(''play''\\)\\); console.log\\(names.slice\\(0,20\\)\\)\")"
     ]
   }
 }

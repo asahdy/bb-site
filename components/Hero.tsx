@@ -26,7 +26,7 @@ export default function Hero() {
           className="inline-flex items-center gap-3 mb-6 w-fit group"
         >
 
-          <span className="text-muted-foreground text-lg uppercase tracking-widest group-hover:text-foreground transition-colors">
+          <span className="text-muted-foreground text-xl uppercase tracking-widest group-hover:text-foreground transition-colors">
             New Album — The Blues Is My Biography
           </span>
         </Link>
@@ -35,7 +35,7 @@ export default function Hero() {
           Billy<br />Branch
         </h1>
 
-        <p className="text-muted-foreground text-base md:text-lg tracking-widest uppercase mt-5">
+        <p className="text-muted-foreground text-base md:text-xl tracking-widest uppercase mt-5">
           Emmy Award Winner &nbsp;·&nbsp; 3× Grammy Nominee &nbsp;·&nbsp; Blues Hall of Fame
         </p>
 

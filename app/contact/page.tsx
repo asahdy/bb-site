@@ -8,7 +8,14 @@ const professionalContacts = [
   {
     category: "Booking",
     entries: [
-      { label: null, value: "booking@billybranch.com", href: "mailto:booking@billybranch.com" },
+      { label: null, value: "booking@billybranch.com", href: "mailto:billybranchmusic@gmail.com" },
+    ],
+  },
+  {
+    category: "Publicist",
+    entries: [
+      { label: "Email:", name: "Lynn Orman", value: "ormanmusic@gmail.com", href: "mailto:ormanmusic@gmail.com" },
+      { label: "Phone Number:", value: "847-452-6469", href: "tel:18474526469" }
     ],
   },
   {
@@ -27,7 +34,7 @@ const professionalContacts = [
 ]
 
 const labelContacts = [
-  { label: "Publicity", name: "Marni Willenson", value: " 773-597-8224", href: "tel: 17735978224" },
+  { label: "Co-Owner", name: "Marni Willenson", value: " 773-597-8224", href: "tel: 17735978224" },
 ]
 
 const socialLinks = [
@@ -90,15 +97,26 @@ export default function ContactPage() {
           </div>
 
           <div className="flex flex-col gap-8">
-            <div>
-              <p className="text-muted-foreground text-lg uppercase tracking-widest border-b border-border pb-1 w-fit mb-1">Rosa's Lounge Records</p>
+            <div className="flex flex-col gap-0.5">
+              <p className="text-muted-foreground text-lg uppercase tracking-widest border-b border-border pb-1 w-fit">Rosa's Lounge Records</p>
               <a
                 href="https://rosaslounge-records.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground text-lg hover:text-foreground transition-colors"
+                className="text-foreground font-light text-xl hover:text-foreground transition-colors"
               >
                 rosaslounge-records.com
+              </a>
+            </div>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-muted-foreground text-lg uppercase tracking-widest border-b border-border pb-1 w-fit">Address</span>
+              <a
+                href="https://maps.google.com/?q=3420+W+Armitage+Ave,+Chicago,+IL+60647"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground font-light text-xl hover:text-foreground transition-colors"
+              >
+                3420 W Armitage Ave, Chicago, IL 60647
               </a>
             </div>
 

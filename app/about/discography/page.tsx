@@ -13,9 +13,16 @@ const featured = {
   description: "Billy Branch's latest album — the inaugural release on Rosa's Lounge Records — is a commanding 11-track collection blending traditional Chicago Blues with contemporary arrangements. Celebrated with a live concert in Hyde Park, the record features standout cuts like 'Dead End Street' and 'Toxic Love.'",
 }
 
-const albums = [
+const albums: {
+  title: string
+  year: string
+  label: string
+  artist?: string
+  image?: string
+  listenUrl?: string
+}[] = [
   {
-    title: "Roots and Branches: The Songs of Little Walter",
+    title: "Roots And Branches: The Songs Of Little Walter",
     year: "2019",
     label: "Alligator Records",
     image: "/images/lilwalter.jpg",
@@ -34,6 +41,91 @@ const albums = [
     label: "P-Vine Records",
     image: "/images/kicking.jpg",
     listenUrl: "https://music.apple.com/jp/album/live-kicking-at-rosas-lounge/320485558?l=en-US",
+  },
+  {
+    title: "Don't Mess With The Bluesmen",
+    year: "2004",
+    label: "P-Vine Records",
+    image: "/images/dmwtbm.jpg",
+  },
+  {
+    title: "Easy Meeting",
+    year: "2002",
+    label: "Isabel Records",
+    image: "/images/BBEM.jpg",
+    listenUrl: "https://open.spotify.com/album/5xOV6cjPIfCtkV1iD4vlkn?si=xzLtWBLaSyyLKAfqif6iYg",
+  },
+  {
+    title: "Billy Branch And The Sons Of Blues",
+    year: "2000",
+    label: "Blue Sun",
+    image: "/images/BBSOBCJ.jpg",
+  },
+  {
+    title: "Sweet Home Chicago",
+    year: "2000",
+    label: "Charly Records",
+    image: "/images/BBSHC.jpg",
+  },
+  {
+    title: "Superharps",
+    year: "1999",
+    label: "Telarc Blues",
+    image: "/images/BBSH.jpg",
+    listenUrl: "https://open.spotify.com/album/0NaLgvTdpZ0I3gubt5DclX?si=vPjgFgSvQRi1eo2n-Ih8kw",
+
+  },
+  {
+    title: "Chicago Blues Session Vol. 22",
+    year: "1998",
+    label: "Wolf Records",
+    image: "/images/BBSV2.jpg",
+
+  },
+  {
+    title: "Satisfy Me",
+    year: "1996",
+    label: "Verve Records / Gitanes Jazz Productions",
+    image: "/images/BBSM.jpg",
+    listenUrl: "https://music.apple.com/gb/album/satisfy-me/1443162773",
+  },
+  {
+    title: "The Blues Keep Following Me Around",
+    year: "1995",
+    label: "Verve Records",
+    image: "/images/BBfollow.jpg",
+  },
+  {
+    title: "Where's My Money?",
+    year: "1995",
+    label: "Evidence",
+    image: "/images/BBWMM.jpg",
+    listenUrl: "https://open.spotify.com/album/06c8ti1r7JUFs0MRNyVmHX?si=7fVh_9mzTBGhZTwabnULFA",
+  },
+  {
+    title: "Mississippi Flashback",
+    year: "1992",
+    label: "GBW",
+    image: "/images/BBBFB.jpg",
+  },
+  {
+    title: "Harp Attack!",
+    year: "1990",
+    label: "Alligator Records",
+    image: "/images/BBHA.jpg",
+    listenUrl: "https://open.spotify.com/album/3Iocb6GuVaLNIlIezvqTLY?si=7AgrdV4PSRSDA8P_VGYTvQ",
+  },
+  {
+    title: "Blues Live '82 — American Folk Blues Festival",
+    year: "1983",
+    label: "L+R Records",
+    image: "/images/BBL82.jpg",
+  },
+  {
+    title: "Chicago's Young Blues Generation",
+    year: "1982",
+    label: "L+R Records",
+    image: "/images/CYBG.jpg",
   },
 ]
 
@@ -99,28 +191,35 @@ export default function DiscographyPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {albums.map((album) => (
               <div key={album.title} className="flex flex-col gap-4">
-                <div className="relative w-full aspect-square overflow-hidden">
-                  <Image
-                    src={album.image}
-                    alt={album.title}
-                    fill
-                    className="object-cover"
-                  />
+                <div className="relative w-full aspect-square overflow-hidden bg-muted">
+                  {album.image && (
+                    <Image
+                      src={album.image}
+                      alt={album.title}
+                      fill
+                      className="object-cover"
+                    />
+                  )}
                 </div>
                 <div className="flex flex-col gap-1">
-                  <p className="text-muted-foreground text-xl uppercase tracking-widest pb-1">{album.year} · {album.label}</p>
+                  <p className="text-muted-foreground text-sm uppercase tracking-widest pb-1">{album.year} · {album.label}</p>
+                  {album.artist && (
+                    <p className="text-muted-foreground text-sm uppercase tracking-widest">{album.artist}</p>
+                  )}
                   <h3 className="text-foreground font-bold uppercase tracking-wide leading-snug text-base">
                     {album.title}
                   </h3>
                 </div>
-                <a
-                  href={album.listenUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center text-base uppercase tracking-widest py-2 border-2 border-border text-muted-foreground hover:border-foreground hover:text-foreground transition-colors mt-auto"
-                >
-                  Listen
-                </a>
+                {album.listenUrl && (
+                  <a
+                    href={album.listenUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center text-base uppercase tracking-widest py-2 border-2 border-border text-muted-foreground hover:border-foreground hover:text-foreground transition-colors mt-auto"
+                  >
+                    Listen
+                  </a>
+                )}
               </div>
             ))}
           </div>
