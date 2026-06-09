@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-end px-10 pb-16 md:px-16">
+      <div className="absolute inset-0 flex flex-col justify-end px-6 pb-12 md:px-16 md:pb-16">
 
         {/* Album callout */}
         <Link
@@ -26,16 +26,16 @@ export default function Hero() {
           className="inline-flex items-center gap-3 mb-6 w-fit group"
         >
 
-          <span className="text-muted-foreground text-xl uppercase tracking-widest group-hover:text-foreground transition-colors">
+          <span className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest group-hover:text-foreground transition-colors">
             New Album — The Blues Is My Biography
           </span>
         </Link>
 
-        <h1 className="text-foreground text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-widest leading-none">
+        <h1 className="text-foreground text-5xl md:text-8xl lg:text-9xl font-bold uppercase tracking-widest leading-none">
           Billy<br />Branch
         </h1>
 
-        <p className="text-muted-foreground text-base md:text-xl tracking-widest uppercase mt-5">
+        <p className="text-muted-foreground text-xs md:text-xl tracking-widest uppercase mt-5">
           Emmy Award Winner &nbsp;·&nbsp; 3× Grammy Nominee &nbsp;·&nbsp; Blues Hall of Fame
         </p>
 

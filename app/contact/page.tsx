@@ -50,7 +50,7 @@ export default function ContactPage() {
       {/* Header */}
       <section className="h-[25vh] w-full bg-primary flex flex-col justify-end px-6 pb-16 border-b-2 border-border">
         <div className="max-w-5xl mx-auto w-full">
-          <h1 className="text-foreground text-6xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
+          <h1 className="text-foreground text-4xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
             Contact
           </h1>
         </div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                     )}
                     <a
                       href={entry.href}
-                      className="text-foreground font-light text-xl hover:text-foreground transition-colors"
+                      className="text-foreground font-light text-base md:text-xl hover:text-foreground transition-colors"
                     >
                       {entry.value}
                     </a>
@@ -103,7 +103,7 @@ export default function ContactPage() {
                 href="https://rosaslounge-records.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground font-light text-xl hover:text-foreground transition-colors"
+                className="text-foreground font-light text-base md:text-xl hover:text-foreground transition-colors"
               >
                 rosaslounge-records.com
               </a>
@@ -114,7 +114,7 @@ export default function ContactPage() {
                 href="https://maps.google.com/?q=3420+W+Armitage+Ave,+Chicago,+IL+60647"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground font-light text-xl hover:text-foreground transition-colors"
+                className="text-foreground font-light text-base md:text-xl hover:text-foreground transition-colors"
               >
                 3420 W Armitage Ave, Chicago, IL 60647
               </a>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                 <span className="text-muted-foreground text-lg">{contact.name}</span>
                 <a
                   href={contact.href}
-                  className="text-foreground font-light text-xl hover:text-foreground transition-colors"
+                  className="text-foreground font-light text-base md:text-xl hover:text-foreground transition-colors"
                 >
                   {contact.value}
                 </a>

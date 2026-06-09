@@ -10,10 +10,10 @@ export default function Bio() {
           About
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
 
           {/* Image */}
-          <div className="relative aspect-3/4 w-full">
+          <div className="relative aspect-square md:aspect-3/4 w-full">
             <Image
               src="/images/port0.jpg"
               alt="Billy Branch"
@@ -26,10 +26,10 @@ export default function Bio() {
           <div className="flex flex-col gap-10">
 
             <div className="flex flex-col gap-6">
-              <p className="text-foreground font-light leading-relaxed text-2xl">
+              <p className="text-foreground font-light leading-relaxed text-lg md:text-2xl">
                 Billy Branch — Emmy Award winner, 3-time Grammy Award® nominee, retired Grammy® governor, and winner of multiple Blues Music Awards — recently received the 2026 B.M.A. Best Harmonica Award and the 2026 Living Blues Award. He's also received multiple B.M.A. Keeping the Blues Alive Awards for his fifty-year International Blues in Schools program.
               </p>
-              <p className="text-foreground font-light leading-relaxed text-2xl">
+              <p className="text-foreground font-light leading-relaxed text-lg md:text-2xl">
                 Branch is an honored recipient of the Mellon Foundation's 2026 Taproot Artists Fellowship, recognizing him as an American Culture-Bearer — honoring a 50-year Blues career that began with his seven-year tenure as Willie Dixon's harmonica player. He is a 2020 inductee into the Blues Foundation's Blues Hall of Fame Museum in Memphis, and serves on the Board of Directors of both the Blues Foundation and the Little Walter Foundation.
               </p>
 

@@ -45,7 +45,7 @@ export default function Footer() {
         </p>
 
         {/* Quick Links */}
-        <div className="flex gap-6">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 md:justify-end">
           {quickLinks.map((l) => (
             <Link
               key={l.label}

@@ -136,7 +136,7 @@ export default function DiscographyPage() {
       {/* Hero */}
       <section className="h-[25vh] w-full bg-primary flex flex-col justify-end px-6 pb-16">
         <div className="max-w-5xl mx-auto w-full">
-          <h1 className="text-foreground text-6xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
+          <h1 className="text-foreground text-4xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
             Discography
           </h1>
         </div>
@@ -145,7 +145,7 @@ export default function DiscographyPage() {
       {/* Latest Release */}
       <section className="w-full px-6 py-24 border-b-2 border-border">
         <div className="max-w-5xl mx-auto flex flex-col gap-12">
-          <p className="text-muted-foreground text-3xl md:4xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Latest Release</p>
+          <p className="text-muted-foreground text-xl md:text-3xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Latest Release</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
             <div className="relative aspect-square w-full overflow-hidden">
@@ -159,12 +159,12 @@ export default function DiscographyPage() {
 
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">
-                <p className="text-muted-foreground text-xl uppercase tracking-widest">{featured.year} · {featured.label}</p>
+                <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">{featured.year} · {featured.label}</p>
                 <h2 className="text-foreground text-3xl md:text-4xl font-bold uppercase tracking-widest leading-tight">
                   {featured.title}
                 </h2>
               </div>
-              <p className="text-muted-foreground font-light leading-relaxed text-xl">
+              <p className="text-muted-foreground font-light leading-relaxed text-base md:text-xl">
                 {featured.description}
               </p>
               <a
@@ -186,7 +186,7 @@ export default function DiscographyPage() {
       <section className="w-full px-6 py-24">
         <div className="max-w-5xl mx-auto flex flex-col gap-16">
 
-          <h2 className="text-muted-foreground text-3xl md:4xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Albums</h2>
+          <h2 className="text-muted-foreground text-xl md:text-3xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Albums</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {albums.map((album) => (
@@ -230,17 +230,17 @@ export default function DiscographyPage() {
               href="/about/billy-branch"
               className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
             >
-              <p className="text-muted-foreground text-xl uppercase tracking-widest">Explore</p>
-              <p className="text-foreground text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Billy Branch</p>
-              <p className="text-muted-foreground text-xl font-light leading-relaxed">Emmy winner, three-time Grammy nominee, Blues Hall of Fame inductee.</p>
+              <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
+              <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Billy Branch</p>
+              <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">Emmy winner, three-time Grammy nominee, Blues Hall of Fame inductee.</p>
             </Link>
             <Link
               href="/about/sons-of-blues"
               className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
             >
-              <p className="text-muted-foreground text-xl uppercase tracking-widest">Explore</p>
-              <p className="text-foreground text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Sons of Blues</p>
-              <p className="text-muted-foreground text-xl font-light leading-relaxed">The band behind the music — Billy's longtime crew and collaborators.</p>
+              <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
+              <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Sons of Blues</p>
+              <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">The band behind the music — Billy's longtime crew and collaborators.</p>
             </Link>
           </div>
 

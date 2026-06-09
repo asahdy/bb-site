@@ -16,7 +16,7 @@ export default function TourDate({
   notes,
 }: TourDateProps) {
   return (
-    <div className="flex items-center justify-between gap-6 py-8 border-b-2 border-border">
+    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 py-8 border-b-2 border-border">
 
       {/* Date + Venue + Location */}
       <div className="flex flex-col gap-1">

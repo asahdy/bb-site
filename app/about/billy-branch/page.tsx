@@ -16,13 +16,13 @@ export default function BillyBranchPage() {
           alt="Billy Branch"
           fill
           priority
-          className="object-cover object-[center_20%]"
+          className="object-cover object-[30%_center] md:object-[center_20%]"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 pb-16">
           <div className="max-w-5xl mx-auto w-full">
-            <p className="text-muted-foreground text-lg uppercase tracking-widest">About</p>
-            <h1 className="text-foreground text-6xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
+            <p className="text-muted-foreground text-sm md:text-lg uppercase tracking-widest">About</p>
+            <h1 className="text-foreground text-5xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
               Billy<br />Branch
             </h1>
           </div>
@@ -32,7 +32,7 @@ export default function BillyBranchPage() {
       {/* Biography */}
       <section className="w-full px-6 py-24 border-b-2 border-border">
         <div className="max-w-5xl mx-auto flex flex-col gap-6">
-          <h2 className="text-muted-foreground text-3xl md:4xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Biography</h2>
+          <h2 className="text-muted-foreground text-xl md:text-3xl font-bold uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Biography</h2>
           <p className="text-foreground font-light leading-relaxed text-xl">
             Billy Branch is an Emmy Award winner, a three time Grammy Award® nominee, and a retired Grammy® governor. He's won multiple Blues Music Awards (B.M.A.s), most recently winning both the 2026 Best Harmonica Instrumentalist Award and the 2026 Living Blues Critics' Award. Billy is also a proud recipient of multiple B.M.A. Keeping the Blues Alive Awards for his forty-five year old Blues in Schools program.
           </p>
@@ -60,11 +60,8 @@ export default function BillyBranchPage() {
       {/* Career */}
       <section className="w-full px-6 py-24 border-b-2 border-border">
         <div className="max-w-5xl mx-auto flex flex-col gap-6">
-          <div className="hidden md:block">
-            <h2 className="text-muted-foreground text-3xl md:4xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Career</h2>
-          </div>
+          <h2 className="text-muted-foreground text-xl md:text-3xl font-bold uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Career</h2>
           <div className="flex flex-col gap-6">
-            <h2 className="md:hidden text-muted-foreground text-lg uppercase tracking-widest border-b-2 border-border pb-3">Career</h2>
             <p className="text-foreground font-light leading-relaxed text-xl">
               Branch's touring career began in the late Seventies with his seven-year tenure as harmonica player in the Willie Dixon All Stars. He has spent nearly fifty years presenting America's rich cultural Blues heritage to audiences around the globe: from the Halls of Parliament in the Republic of Turkey, to the beautiful countries of South America, Central America, and Mexico, to Europe, to Australia, to the exotic countries of Asia, including Japan and the People's Republic of China. Billy's groundbreaking tours of China introduced authentic Chicago Blues to millions of young Chinese fans.
             </p>
@@ -78,11 +75,8 @@ export default function BillyBranchPage() {
       {/* Acting & Collaborations */}
       <section className="w-full px-6 py-24 border-b-2 border-border">
         <div className="max-w-5xl mx-auto flex flex-col gap-6">
-          <div className="hidden md:block">
-            <h2 className="text-muted-foreground text-3xl md:4xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Acting + More</h2>
-          </div>
+          <h2 className="text-muted-foreground text-xl md:text-3xl font-bold uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">Acting + More</h2>
           <div className="flex flex-col gap-6">
-            <h2 className="md:hidden text-muted-foreground text-lg uppercase tracking-widest border-b-2 border-border pb-3">Acting & Collaborations</h2>
             <p className="text-foreground font-light leading-relaxed text-lg">
               He is the principal actor and narrator in the recently released epic audio drama <em>Moja</em> (<a href="https://mojasaga.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">mojasaga.com</a>), a comprehensive historical fiction saga spanning five generations of the fictional Ellis family, chronicling African American music from Africa to present day USA.
             </p>
@@ -100,17 +94,17 @@ export default function BillyBranchPage() {
             href="/about/sons-of-blues"
             className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
           >
-            <p className="text-muted-foreground text-xl uppercase tracking-widest">Explore</p>
-            <p className="text-foreground text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Sons of Blues</p>
-            <p className="text-muted-foreground text-xl font-light leading-relaxed">The band behind the music — Billy's longtime crew and collaborators.</p>
+            <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
+            <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Sons of Blues</p>
+            <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">The band behind the music — Billy's longtime crew and collaborators.</p>
           </Link>
           <Link
             href="/about/discography"
             className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
           >
-            <p className="text-muted-foreground text-xl uppercase tracking-widest">Explore</p>
-            <p className="text-foreground text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Discography</p>
-            <p className="text-muted-foreground text-xl font-light leading-relaxed">Fifteen albums under his own name — five decades of recorded Blues.</p>
+            <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
+            <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Discography</p>
+            <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">Fifteen albums under his own name — five decades of recorded Blues.</p>
           </Link>
         </div>
       </section>

@@ -14,7 +14,7 @@ export default function NewsPage() {
       {/* Header */}
       <section className="h-[25vh] w-full bg-primary flex flex-col justify-end px-6 pb-16 border-b-2 border-border">
         <div className="max-w-5xl mx-auto w-full">
-          <h1 className="text-foreground text-6xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
+          <h1 className="text-foreground text-4xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
             News
           </h1>
         </div>
@@ -39,14 +39,14 @@ export default function NewsPage() {
             </div>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-4">
-                <span className="text-muted-foreground text-xl uppercase tracking-widest">{featured.date}</span>
+                <span className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">{featured.date}</span>
                 <span className="text-primary text-base">—</span>
-                <span className="text-muted-foreground text-xl uppercase tracking-widest">{featured.source}</span>
+                <span className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">{featured.source}</span>
               </div>
               <h2 className="text-foreground font-bold uppercase tracking-wide leading-snug text-2xl md:text-3xl group-hover:text-primary transition-colors">
                 {featured.title}
               </h2>
-              <p className="text-muted-foreground font-light leading-relaxed text-xl">
+              <p className="text-muted-foreground font-light leading-relaxed text-base md:text-xl">
                 {featured.description}
               </p>
               <span className="inline-flex items-center gap-3 text-base uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors mt-2">
@@ -72,14 +72,14 @@ export default function NewsPage() {
               {/* Text */}
               <div className="flex flex-col gap-3 flex-1 min-w-0">
                 <div className="flex items-center gap-4">
-                  <span className="text-muted-foreground text-lg uppercase tracking-widest">{item.date}</span>
+                  <span className="text-muted-foreground text-xs md:text-lg uppercase tracking-widest">{item.date}</span>
                   <span className="text-primary text-base">—</span>
-                  <span className="text-muted-foreground text-lg uppercase tracking-widest">{item.source}</span>
+                  <span className="text-muted-foreground text-xs md:text-lg uppercase tracking-widest">{item.source}</span>
                 </div>
                 <h2 className="text-foreground font-bold uppercase tracking-wide leading-snug text-xl group-hover:text-primary transition-colors">
                   {item.title}
                 </h2>
-                <p className="text-muted-foreground text-lg font-light leading-relaxed">
+                <p className="text-muted-foreground text-sm md:text-lg font-light leading-relaxed">
                   {item.description}
                 </p>
                 <span className="inline-flex items-center gap-3 text-md uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors mt-1">
@@ -89,7 +89,7 @@ export default function NewsPage() {
               </div>
 
               {/* Thumbnail */}
-              <div className="relative shrink-0 w-36 md:w-52 aspect-video overflow-hidden">
+              <div className="hidden md:block relative shrink-0 w-52 aspect-video overflow-hidden">
                 <Image
                   src={item.image!}
                   alt={item.title}

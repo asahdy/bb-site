@@ -56,7 +56,7 @@ export default function SonsOfBluesPage() {
       {/* Hero */}
       <section className="h-[25vh] w-full bg-primary flex flex-col justify-end px-6 pb-16 border-b-2 border-border">
         <div className="max-w-5xl mx-auto w-full">
-          <h1 className="text-foreground text-6xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
+          <h1 className="text-foreground text-4xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
             Sons of Blues
           </h1>
         </div>
@@ -68,13 +68,13 @@ export default function SonsOfBluesPage() {
 
           {/* About the band */}
           <div className="flex flex-col gap-6 pb-16 border-b-2 border-border mb-16">
-            <h2 className="text-muted-foreground text-3xl md:4xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">About</h2>
+            <h2 className="text-muted-foreground text-xl md:text-3xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">About</h2>
             <p className="text-foreground font-light text-xl leading-relaxed max-w-3xl">
               Billy Branch and The Sons of Blues have delivered authentic Chicago Blues to audiences around the world for over four decades. From their first paid gig at the 1977 Berlin Jazz Festival to headlining the 2017 Chicago Blues Festival, the SOBs remain one of the most vital forces in Blues music today.
             </p>
           </div>
 
-          <h2 className="text-muted-foreground text-3xl md:4xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">The Band</h2>
+          <h2 className="text-muted-foreground text-xl md:text-3xl font-bold  uppercase tracking-widest leading-tight border-b-2 border-border pb-3 w-fit">The Band</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16 mt-12">
             {members.map((member) => (
@@ -119,17 +119,17 @@ export default function SonsOfBluesPage() {
               href="/about/billy-branch"
               className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
             >
-              <p className="text-muted-foreground text-xl uppercase tracking-widest">Explore</p>
-              <p className="text-foreground text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Billy Branch</p>
-              <p className="text-muted-foreground text-xl font-light leading-relaxed">Emmy winner, three-time Grammy nominee, Blues Hall of Fame inductee.</p>
+              <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
+              <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Billy Branch</p>
+              <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">Emmy winner, three-time Grammy nominee, Blues Hall of Fame inductee.</p>
             </Link>
             <Link
               href="/about/discography"
               className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
             >
-              <p className="text-muted-foreground text-xl uppercase tracking-widest">Explore</p>
-              <p className="text-foreground text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Discography</p>
-              <p className="text-muted-foreground text-xl font-light leading-relaxed">Fifteen albums under his own name — five decades of recorded Blues.</p>
+              <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
+              <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Discography</p>
+              <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">Fifteen albums under his own name — five decades of recorded Blues.</p>
             </Link>
           </div>
 

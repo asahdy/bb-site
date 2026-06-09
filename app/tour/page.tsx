@@ -53,7 +53,7 @@ export default function TourPage() {
       {/* Header */}
       <section className="h-[25vh] w-full bg-primary flex flex-col justify-end px-6 pb-16 border-b-2 border-border">
         <div className="max-w-5xl mx-auto w-full">
-          <h1 className="text-foreground text-6xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
+          <h1 className="text-foreground text-4xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
             Tour
           </h1>
         </div>

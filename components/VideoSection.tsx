@@ -15,7 +15,7 @@ export default function VideoSection() {
               Blues in Schools
             </p>
           </div>
-          <p className="text-muted-foreground font-light text-2xl leading-relaxed text-right">
+          <p className="text-muted-foreground font-light text-lg md:text-2xl leading-relaxed md:text-right">
             For over 45 years, Billy Branch has brought authentic Chicago Blues into schools across America and around the world, preserving the tradition by passing it to the next generation.
           </p>
         </div>
