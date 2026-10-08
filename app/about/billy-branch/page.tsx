@@ -92,19 +92,17 @@ export default function BillyBranchPage() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <Link
             href="/about/sons-of-blues"
-            className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
+            className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors items-center text-center"
           >
             <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
             <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Sons of Blues</p>
-            <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">The band behind the music — Billy's longtime crew and collaborators.</p>
           </Link>
           <Link
             href="/about/discography"
-            className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
+            className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors items-center text-center"
           >
             <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
             <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Discography</p>
-            <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">Fifteen albums under his own name — five decades of recorded Blues.</p>
           </Link>
         </div>
       </section>

@@ -11,11 +11,11 @@ export default function Hero() {
         alt="Billy Branch"
         fill
         priority
-        className="object-cover object-top"
+        className="object-cover object-center md:object-[60%_15%]"
       />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-black via-black/70 to-black/10" />
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col justify-end px-6 pb-12 md:px-16 md:pb-16">
@@ -25,7 +25,6 @@ export default function Hero() {
           href="/about/discography"
           className="inline-flex items-center gap-3 mb-6 w-fit group"
         >
-
           <span className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest group-hover:text-foreground transition-colors">
             New Album — The Blues Is My Biography
           </span>
@@ -35,8 +34,12 @@ export default function Hero() {
           Billy<br />Branch
         </h1>
 
-        <p className="text-muted-foreground text-xs md:text-xl tracking-widest uppercase mt-5">
-          Emmy Award Winner &nbsp;·&nbsp; 3× Grammy Nominee &nbsp;·&nbsp; Blues Hall of Fame
+        <p className="text-muted-foreground text-xs md:text-xl tracking-widest uppercase mt-5 flex flex-wrap gap-x-3 gap-y-1">
+          <span>Emmy Award Winner</span>
+          <span className="hidden sm:inline text-border">·</span>
+          <span>3× Grammy Nominee</span>
+          <span className="hidden sm:inline text-border">·</span>
+          <span>Blues Hall of Fame</span>
         </p>
 
       </div>

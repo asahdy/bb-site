@@ -36,14 +36,14 @@ const members = [
   {
     name: "Mose Rutues Jr.",
     role: "Drums",
-    image: "/images/mose-img.jpg",
+    image: "/images/mosedrums.jpeg",
     bio: "Mose retired in 2016 after serving as the drummer for the Sons of Blues for nearly 30 years. He previously played with legendary greats including Major Lance, Bobby Rush, McKinley Mitchell, and Joe Tex. His intense energy and unique rhythmic style was the engine that powered the stylistic diversity of the Sons of Blues. His rich, Mississippi voice evoked the deep emotions of his southern Blues roots.",
     status: "memorial",
   },
   {
     name: "Nick Charles",
     role: "Bass",
-    image: "/images/nick-img.jpg",
+    image: "/images/nickbass.jpeg",
     bio: "It is with great sadness that we remember Nick Charles, who lost his courageous battle with cancer on July 2, 2014. He was the griot and big brother to the SOB family — his stories of the old South enlightened the band and gave depth to their Blues roots. Nick was given his first bass guitar and amp by Howlin' Wolf, who later brought him to Chicago alongside Eddie Shaw. He went on to play with Howlin' Wolf, B.B. King, Tina Turner, Eddie Shaw, Valerie Wellington, and the Rolling Stones. His playing is preserved on the DVD Muddy Waters & the Rolling Stones Live.",
     status: "memorial",
   },
@@ -54,7 +54,7 @@ export default function SonsOfBluesPage() {
     <main className="mt-16">
 
       {/* Hero */}
-      <section className="h-[25vh] w-full bg-primary flex flex-col justify-end px-6 pb-16 border-b-2 border-border">
+      <section className="w-full bg-primary flex flex-col justify-end px-6 pt-8 pb-8 md:pt-16 md:pb-14 border-b-2 border-border">
         <div className="max-w-5xl mx-auto w-full">
           <h1 className="text-foreground text-4xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
             Sons of Blues
@@ -81,7 +81,7 @@ export default function SonsOfBluesPage() {
               <div key={member.name} className="flex flex-col gap-5">
 
                 {/* Photo */}
-                <div className={`relative w-full aspect-3/4 overflow-hidden ${member.status === "memorial" ? "opacity-60 grayscale" : ""}`}>
+                <div className="relative w-full aspect-3/4 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -117,19 +117,17 @@ export default function SonsOfBluesPage() {
           <div className="border-t-2 border-border pt-16 grid grid-cols-1 md:grid-cols-2 gap-6 mt-0">
             <Link
               href="/about/billy-branch"
-              className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
+              className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors items-center text-center"
             >
               <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
               <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Billy Branch</p>
-              <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">Emmy winner, three-time Grammy nominee, Blues Hall of Fame inductee.</p>
             </Link>
             <Link
               href="/about/discography"
-              className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
+              className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors items-center text-center"
             >
               <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
               <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Discography</p>
-              <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">Fifteen albums under his own name — five decades of recorded Blues.</p>
             </Link>
           </div>
 

@@ -9,6 +9,22 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
+    title: "Tuesdays on the Terrace | Billy Branch",
+    description: " ",
+    date: "July 2026",
+    source: "Museum of Contemporary Art Chicago",
+    href: "https://mcachicago.org/whats-on/events/tuesdays-on-the-terrace-billy-branch/",
+    image: "/images/B-Branch-By-Allan-Frohlichstein.jpg"
+  },
+  {
+    title:"Dispatch: Chicago Blues Festival Hosts Powerhouse Women and Pays Tribute to Billy Branch, a Living Legend of Chicago Blues",
+    description:" ",
+    date: "June 2026",
+    source: "Third Coast Review",
+    href: "https://thirdcoastreview.com/music/2026/06/10/chicago-blues-festival-day-three",
+    image: "/images/3rdcoastarticle0626.jpeg"
+  }
+  ,{
     title: "16 Oscars: 'Sinners' Sparks Conversation About Chicago Blues History and Its Future",
     description: "The Oscar-winning film 'Sinners' has renewed national attention on Chicago Blues. Billy Branch weighs in on the genre's roots, legacy, and what its future looks like.",
     date: "March 2026",
@@ -30,14 +46,7 @@ export const newsItems: NewsItem[] = [
     date: "February 2026",
     source: "Chicago Tribune",
     href: "https://www.chicagotribune.com/2026/02/25/chicago-blues-billy-branch/",
-    image: "/images/BIMB.jpg",
-  },
-  {
-    title: "Australian Musician Magazine",
-    description: "Placeholder — add title and description when available.",
-    date: "2025",
-    source: "Australian Musician Magazine",
-    href: "#",
+    image:  "/images/chicagotribunearticlepic.webp",
   },
   {
     title: "Blues Harp Legend Billy Branch Releases New Album Offering 'Message Music With A Groove'",

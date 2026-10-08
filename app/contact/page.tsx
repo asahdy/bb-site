@@ -48,7 +48,7 @@ export default function ContactPage() {
     <main className="mt-16">
 
       {/* Header */}
-      <section className="h-[25vh] w-full bg-primary flex flex-col justify-end px-6 pb-16 border-b-2 border-border">
+      <section className="w-full bg-primary flex flex-col justify-end px-6 pt-8 pb-8 md:pt-16 md:pb-14">
         <div className="max-w-5xl mx-auto w-full">
           <h1 className="text-foreground text-4xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
             Contact

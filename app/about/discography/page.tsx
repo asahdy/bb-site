@@ -134,7 +134,7 @@ export default function DiscographyPage() {
     <main className="mt-16">
 
       {/* Hero */}
-      <section className="h-[25vh] w-full bg-primary flex flex-col justify-end px-6 pb-16">
+      <section className="w-full bg-primary flex flex-col justify-end px-6 pt-8 pb-8 md:pt-16 md:pb-14">
         <div className="max-w-5xl mx-auto w-full">
           <h1 className="text-foreground text-4xl md:text-8xl font-bold uppercase tracking-widest leading-tight">
             Discography
@@ -228,19 +228,17 @@ export default function DiscographyPage() {
           <div className="border-t-2 border-border pt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link
               href="/about/billy-branch"
-              className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
+              className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors items-center text-center"
             >
               <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
               <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Billy Branch</p>
-              <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">Emmy winner, three-time Grammy nominee, Blues Hall of Fame inductee.</p>
             </Link>
             <Link
               href="/about/sons-of-blues"
-              className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors"
+              className="group flex flex-col gap-3 border-2 border-border p-8 hover:border-primary transition-colors items-center text-center"
             >
               <p className="text-muted-foreground text-sm md:text-xl uppercase tracking-widest">Explore</p>
               <p className="text-foreground text-xl md:text-2xl uppercase tracking-wider font-bold group-hover:text-primary transition-colors">Sons of Blues</p>
-              <p className="text-muted-foreground text-base md:text-xl font-light leading-relaxed">The band behind the music — Billy's longtime crew and collaborators.</p>
             </Link>
           </div>
 

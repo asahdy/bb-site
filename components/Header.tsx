@@ -17,6 +17,7 @@ const aboutLinks = [
   { label: "Billy Branch", href: "/about/billy-branch" },
   { label: "Sons of Blues", href: "/about/sons-of-blues" },
   { label: "Discography", href: "/about/discography" },
+  { label: "Blues in Schools", href: "/about/blues-in-schools" },
 ]
 
 export default function Header() {

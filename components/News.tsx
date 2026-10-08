@@ -20,7 +20,6 @@ export default function News() {
               rel="noopener noreferrer"
               className="flex flex-col gap-0 group border-t-2 border-border"
             >
-              {/* Image */}
               <div className="relative aspect-video w-full overflow-hidden bg-muted-foreground/10">
                 {item.image && (
                   <Image
@@ -31,8 +30,6 @@ export default function News() {
                   />
                 )}
               </div>
-
-              {/* Text */}
               <div className="flex flex-col gap-3 pt-4">
                 <p className="text-muted-foreground text-xl uppercase tracking-widest">
                   {item.date} &nbsp;·&nbsp; {item.source}
@@ -48,7 +45,6 @@ export default function News() {
           ))}
         </div>
 
-        {/* Section footer link */}
         <div className="flex justify-center mt-16 border-t-2 border-border pt-10">
           <Link href="/news" className="inline-block border-2 border-primary text-foreground text-xl uppercase tracking-widest px-8 py-3 hover:bg-primary transition-colors">
             All News

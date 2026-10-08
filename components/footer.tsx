@@ -15,6 +15,7 @@ const quickLinks = [
   { label: "Discography", href: "/about/discography" },
   { label: "News", href: "/news" },
   { label: "Tour", href: "/tour" },
+  { label: "Blues in Schools", href: "/about/blues-in-schools" },
   { label: "Contact", href: "/contact" },
 ]
 
