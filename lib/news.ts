@@ -26,7 +26,7 @@ export const newsItems: NewsItem[] = [
   }
   ,{
     title: "16 Oscars: 'Sinners' Sparks Conversation About Chicago Blues History and Its Future",
-    description: "The Oscar-winning film 'Sinners' has renewed national attention on Chicago Blues. Billy Branch weighs in on the genre's roots, legacy, and what its future looks like.",
+    description: " ",
     date: "March 2026",
     source: "WTTW Chicago",
     href: "https://news.wttw.com/2026/03/13/16-oscars-sinners-sparks-conversation-chicago-blues-history-and-its-future",

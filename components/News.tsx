@@ -7,7 +7,7 @@ export default function News() {
     <section className="w-full px-6 py-24 border-t-2 border-border">
       <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-foreground text-3xl md:text-4xl font-bold uppercase tracking-widest leading-tight border-b-2 border-border w-fit pb-2 mb-10">
+        <h2 className="text-3xl md:text-4xl font-light uppercase tracking-widest leading-none border-l-2 border-primary pl-4 mb-10">
           News
         </h2>
 

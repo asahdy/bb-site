@@ -119,6 +119,15 @@ export default function Header() {
               Contact
             </Link>
 
+            <a
+              href="https://www.billybranchfyc.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base uppercase tracking-wider text-primary hover:text-foreground transition-colors"
+            >
+              For Your Consideration
+            </a>
+
           </nav>
 
           {/* Divider */}

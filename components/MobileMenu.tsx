@@ -21,6 +21,7 @@ const navLinks = [
   { label: "News", href: "/news" },
   { label: "Tour", href: "/tour" },
   { label: "Contact", href: "/contact" },
+  { label: "For Your Consideration", href: "https://www.billybranchfyc.com/", external: true },
 ]
 
 const socials = [
@@ -59,6 +60,17 @@ export default function MobileMenu() {
                   </Link>
                 ))}
               </div>
+            ) : item.external ? (
+              <a
+                key={item.href}
+                href={item.href!}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="text-primary text-sm uppercase tracking-wider hover:text-foreground transition-colors"
+              >
+                {item.label}
+              </a>
             ) : (
               <Link
                 key={item.href}

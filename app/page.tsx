@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="bg-background">
       <Hero />
-      <section className="w-full bg-primary px-6 py-2"></section>
+      <div className="w-full border-t border-primary" />
       <VideoSection />
       <Bio />
       <News />
