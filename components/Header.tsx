@@ -66,7 +66,7 @@ export default function Header() {
               href="https://www.billybranchfyc.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-base uppercase tracking-wider transition-colors ${isActive("/contact") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+              className={`text-base uppercase tracking-wider transition-colors "text-muted-foreground hover:text-foreground"`}
             >
               For Your Consideration
             </a>
