@@ -62,6 +62,15 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-8">
           <nav className="flex items-center gap-8">
 
+            <a
+              href="https://www.billybranchfyc.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-base uppercase tracking-wider transition-colors ${isActive("/contact") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              For Your Consideration
+            </a>
+
             {/* About — hover dropdown, square, chevron indicator */}
             <div
               className="relative"
@@ -97,7 +106,6 @@ export default function Header() {
                 </div>
               )}
             </div>
-
             <Link
               href="/news"
               className={`text-base uppercase tracking-wider transition-colors ${isActive("/news") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
@@ -118,16 +126,6 @@ export default function Header() {
             >
               Contact
             </Link>
-
-            <a
-              href="https://www.billybranchfyc.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base uppercase tracking-wider text-primary hover:text-foreground transition-colors"
-            >
-              For Your Consideration
-            </a>
-
           </nav>
 
           {/* Divider */}
